@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="contenedor">
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+        <header class="header">
+            <h1>Un mundo con CSS
+                <br>
+                <span>Oprimir</span>
+            </h1>
+        </header>
+
+        <main class="main">
+            <div class="contenedor2">
+                <article>
+                    <h2><code>¿Qué es css3?</code></h2>
+                    <p>
+                        Es un lenguaje usado para definir
+                        la presentación de un documento estructurado
+                        escrito en HTML o XML (y por extensión en XHTML)
+                    </p>
+                    <p>
+                        <a href="#model" class="modal">Oprimir</a>
+                    </p>
+                </article>
+            </div>
+        </main>
+        <footer>
+            <div id="model" class="model">
+               
+                <aside class="modal-box"> 
+                    <a href="#">
+                        <span style="color:grey">
+                            <i class="material-icons">
+                                cancel
+                            </i>
+                        </span>
+                    </a>
+                    <h1>¡Es un gusto tenerte en mi sitio web!
+                        <br> <span><div id="name"></div></span>
+                    </h1>
+                     <form>
+                         <input type="text" id="name" name="prod" placeholder="Escribe tu nombre">
+                         <input type="button" onclick="sub()" value="enviar">
+                     </form>
+                </aside>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/code.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+:root
+{
+    --padding: 10px;
+    --font-size: 20px;
+    --transition: all.5s ease-out ;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Serif', serif;
+}
+/* ========================================== Encabezado ============================================= */
+header
+{
+    padding: var(--padding);
+    height: 200px;
+    background-color: #1786F6;
+    color: honeydew;
+    transition: var(--transition);
+}
+h1
+{
+    text-align: center;
+    margin: 60px auto;
+    font-weight: 100;
+}
+nav
+{
+    display: inline; 
+}
+ul
+{
+    text-align: right; 
+}
+li
+{
+    margin: 10px;
+    display: inline-block;
+}
+li,a
+{
+    text-decoration: none;
+    color: gray;
+    text-decoration-style: solid;
+    text-decoration-style: dotted;
+    transition: var(--transition);
+}
+a:hover
+{
+    text-decoration-color: grey;
+    text-decoration-style: solid;
+    text-decoration-line:  underline;
+    color: #b1b1b1;
+    font-size: var(--font-size);
+    transition: var(--transition);
+}
+
+.header:hover
+{
+    background-color: aqua;
+    color:#1786F6;
+    transition: all.5s ease-out;
+    font-size: var(--font-size);
+}
+.header:active
+{
+    background-color: black;
+    color: blanchedalmond;
+}
+.contenedor2
+{   
+    background-color: #BABBBD;
+}
+article
+{
+    margin: 20px auto;
+}
+h2
+{
+    text-align: center;
+    font-size: 24px;
+    color: #bb2d05;
+    letter-spacing: 5px;
+}
+p
+{
+    line-height: 1.5em;
+    padding: 30px;
+    text-overflow: ellipsis;
+}
+
+/*===================== Modal css ============================ */
+
+.modal{
+    color: black;
+}
+.modal:hover
+{
+    color: black;
+}
+.model
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    transition: var(--transition);
+}
+.modal-box
+{
+    background-image: url(https://images.pexels.com/photos/733475/pexels-photo-733475.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    border-radius: 5px;
+    width: 60%;
+    height: 75vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: blanchedalmond;
+}
+.model:target
+{
+    display: flex;
+}
+
+/* ====================================== formulario ===================================================== */
+form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+[type^="text"]
+{
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    color: gray;
+
+}
+
+[type^="button"]
+{
+    color: #F9FBFD;
+    width: 210px;
+    background-color:  #04B386;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+}
+[type^="button"]:hover
+{
+    font-size: 16px;
+    padding: 11px ;
+}
